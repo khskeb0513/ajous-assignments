@@ -1,5 +1,5 @@
 # ajous-assignments(가)
-### 캘린더에 ical 형식으 과제를 표시하는 서비스(예정)
+### 캘린더에 ical 형식으로 과제를 표시하는 서비스(예정)
 
 1. sso token 받아서
 2. eclass2.ajou.ac.kr 에 SAMLRequest 로 세션 받고
