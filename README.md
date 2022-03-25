@@ -12,7 +12,7 @@
 2. calendarItems API 받아서 JSON parse 하고
 3. iCalendar 형식으로 리턴
 
-과제
+### 과제
 
 - 서비스에서 엔드유저 식별 어떻게?
   - 쿼리 파라미터로 토큰 받아서
