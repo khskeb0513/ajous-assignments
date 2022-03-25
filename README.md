@@ -1,10 +1,16 @@
 # ajous-assignments(가)
-### 캘린더에 ical 형식으로 과제를 표시하는 서비스(예정)
+> 캘린더에 ical 형식으로 과제를 표시하는 서비스(예정)
 
+## 초안
 1. sso token 받아서
 2. eclass2.ajou.ac.kr 에 SAMLRequest 로 세션 받고
 3. calendarItems API 받아서 JSON parse 하고
 4. iCalendar 형식으로 리턴
+
+## 보완1
+1. eclass2.ajou.ac.kr 의 bbrouter 쿠키 받아서: chrome extenstion을 통해서
+2. calendarItems API 받아서 JSON parse 하고
+3. iCalendar 형식으로 리턴
 
 과제
 
