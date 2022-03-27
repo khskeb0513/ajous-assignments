@@ -1,5 +1,6 @@
-# ajous-assignments(가)
+# ajous-sync
 > 캘린더에 ical 형식으로 과제를 표시하는 서비스(예정)
+> 할 겸 확장 프로그램도
 
 ## 초안
 1. sso token 받아서
