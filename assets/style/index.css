@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #164ea7;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0 3px 2px gray);
+}
+
+header .logo {
+    width: 28px;
+    filter: drop-shadow(0 1px 3px #000);
+    margin-right: 16px;
+}
+
+header .title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    filter: drop-shadow(0 2px 3px #000);
+}
+
+.container {
+    display: flex;
+}
+
+.portlet-parent {
+    margin: 24px;
+}

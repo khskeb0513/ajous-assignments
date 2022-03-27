@@ -1,0 +1,24 @@
+{
+  "name": "Ajous Sync",
+  "action": {},
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Client for Ajous. (Ajou univ.)",
+  "host_permissions": [
+    "*://*.ajou.ac.kr/*",
+    "*://*/*"
+  ],
+  "permissions": [
+    "cookies",
+    "webRequest",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "assets/image/b1-1 5-ai-border-16.png",
+    "48": "assets/image/b1-1 5-ai-border-48.png",
+    "128": "assets/image/b1-1 5-ai-border-128.png"
+  }
+}
