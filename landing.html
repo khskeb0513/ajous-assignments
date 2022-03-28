@@ -16,43 +16,72 @@
     <img class="logo" src="assets/image/b1-1%205-ai-white.png" alt="logo">
     <span class="title">Ajous!</span>
 </header>
+<div class="subtitle">
+    <h2>안녕하세요. Ajous! 를 설치해줘서 감사해요.</h2>
+</div>
 <div class="container">
-    <div class="portlet-parent">
-        <h2>안녕하세요. Ajous! 를 설치해줘서 감사해요.</h2>
-        <p>Ajous! 는 아주대학교의 여러 정보를 한데 모았다는 의미에서 지은 이름이에요.</p>
-        <h3>Ajous! 는 다음과 같은 기능을 수행해요.</h3>
-        <ul>
-            <li>AjouBb 에서 과제 확인하기</li>
-            <li>MPortal 에서 식사메뉴 확인하기</li>
-            <li>도서관 홈페이지에서 대여 도서 확인하기</li>
-        </ul>
-        <h3>Ajous! 는 다음과 같은 방식으로 동작해요.</h3>
-        <ol>
-            <li>확장프로그램은 각 기능에 필요한 쿠키를 수집한다.</li>
-            <li>확장프로그램은 수집된 쿠키를 백엔드 서버(이하 "서버")에 전송한다.</li>
-            <li>서버는 쿠키가 로그인된 세션인지 확인한다.
+    <div class="portlet-col">
+        <div class="portlet-parent">
+            <h3>Ajous! 는</h3>
+            <p>아주대학교의 여러 정보를 한데 모았다는 의미에서 지은 이름이에요.</p>
+            <h3>Ajous! 는 다음과 같은 기능을 수행해요.</h3>
+            <ul>
+                <li>AjouBb 에서 과제 확인하기</li>
+                <li>MPortal 에서 식사메뉴 확인하기</li>
+                <li>도서관 홈페이지에서 대여 도서 확인하기</li>
+            </ul>
+            <h3>Ajous! 를 다음과 같이 사용하세요.</h3>
+            <ul>
+                <li>
+                    아이콘을 누르면 정보 페이지가 나와요.
+                </li>
+                <li>
+                    빠르게 사용하려면 아이콘 옆 압정 버튼으로 주소창에 고정하세요.
+                </li>
+                <li>
+                    AjouBb, 도서관 등 홈페이지에서 로그아웃되면 자동으로 로그인 팝업창이 열려요. 로그인 후 정보가 자동으로 불러와져요.
+                </li>
+                <li>
+                    옵션을 열어보세요. 옵션은 아이콘을 우클릭하면 나오는 메뉴에서 열 수 있어요.
+                </li>
+                <li>
+                    옵션에서 포틀릿 구성을 변경할 수 있어요. 원하는 내용만 켜고 끄세요.
+                </li>
+            </ul>
+            <h3>Ajous! 는 다음과 같은 방식으로 동작해요.</h3>
+            <p>
+                Ajous! 를 계속 사용하는 경우 아래 방식과 같이 확장 프로그램이 동작한다는 것에 동의한다는 의미로 받아들일게요.
+            </p>
+            <details>
+                <summary>동작 방식</summary>
                 <ol>
-                    <li>서버는 쿠키값이 정상이면 정보를 불러와 hbs로 사이트를 컴파일 후 리턴한다.</li>
-                    <li>서버는 쿠키값이 비정상이면 null을 리턴한다.
+                    <li>확장프로그램은 각 기능에 필요한 쿠키를 수집한다.</li>
+                    <li>확장프로그램은 수집된 쿠키를 백엔드 서버(이하 "서버")에 전송한다.</li>
+                    <li>서버는 쿠키가 로그인된 세션인지 확인한다.
                         <ol>
-                            <li>확장 프로그램은 로그인창을 불러온다.</li>
-                            <li>로그인 완료 시 팝업창을 닫고 다시 쿠키를 수집, 서버에 전송한다.</li>
-                            <li>다시 3번으로 수행한다.</li>
+                            <li>서버는 쿠키값이 정상이면 정보를 불러와 hbs로 사이트를 컴파일 후 리턴한다.</li>
+                            <li>서버는 쿠키값이 비정상이면 null을 리턴한다.
+                                <ol>
+                                    <li>확장 프로그램은 로그인창을 불러온다.</li>
+                                    <li>로그인 완료 시 팝업창을 닫고 다시 쿠키를 수집, 서버에 전송한다.</li>
+                                    <li>다시 3번으로 수행한다.</li>
+                                </ol>
+                            </li>
                         </ol>
                     </li>
+                    <li>확장 프로그램은 서버로부터 받은 마크업 코드를 페이지에 삽입한다.</li>
                 </ol>
-            </li>
-            <li>확장 프로그램은 서버로부터 받은 마크업 코드를 페이지에 삽입한다.</li>
-        </ol>
-        <h3>필요하면 아래의 채널이 열려있어요.</h3>
-        <p>
-            Ajous! 는 여러분의 생각이 필요해요. 개선점이나 문제점이 있을 때 아래의 채널로 의견을 보내주세요. 항상 업데이트될 Ajous! 를 기대해주세요. 너무 많이는 말구요.
-        </p>
-        <ul>
-            <li>Github: <a href="https://github.com/khskeb0513/ajous-assignments">https://github.com/khskeb0513/ajous-assignments</a>
-            </li>
-            <li>Email: <a href="mailto:h5k@ajou.ac.kr">Hyeonseung Kang &lt;h5k@ajou.ac.kr&gt;</a></li>
-        </ul>
+            </details>
+            <h3>필요한 경우 아래의 채널이 열려있어요.</h3>
+            <p>
+                Ajous! 는 여러분의 생각이 필요해요. 개선점이나 문제점이 있을 때 아래의 채널로 의견을 보내주세요. 항상 업데이트될 Ajous! 를 기대해주세요. 너무 많이는 말구요.
+            </p>
+            <ul>
+                <li>Github: <a href="https://github.com/khskeb0513/ajous-assignments">https://github.com/khskeb0513/ajous-assignments</a>
+                </li>
+                <li>Email: <a href="mailto:h5k@ajou.ac.kr">Hyeonseung Kang &lt;h5k@ajou.ac.kr&gt;</a></li>
+            </ul>
+        </div>
     </div>
 </div>
 </body>
