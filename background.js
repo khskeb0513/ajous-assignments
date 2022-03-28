@@ -1,9 +1,29 @@
+const PortletEnum = {
+    assignments: 'ASSIGNMENTS',
+    meals: 'MEALS',
+    library: 'LIBRARY'
+}
+
+
+chrome.runtime.onInstalled.addListener(details => {
+    chrome.storage.sync.set({portletList: Object.values(PortletEnum)})
+    chrome.tabs.create({url: 'landing.html'});
+})
+
 chrome.action.onClicked.addListener(tab => {
     chrome.tabs.create({url: 'index.html'});
 })
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     switch (message.type) {
+        case 'GET_PORTLET_LIST': {
+            return chrome.storage.sync.get('portletList').then(r =>
+                chrome.tabs.sendMessage(sender.tab.id, {...message, message: r})
+            )
+        }
+        case 'SAVE_PORTLET_LIST': {
+            return chrome.storage.sync.set({portletList: message.message})
+        }
         case 'ASSIGNMENTS': {
             (async () => {
                 const getCookie = async () => chrome.cookies.get({

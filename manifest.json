@@ -6,16 +6,19 @@
   "description": "Client for Ajous. (Ajou univ.)",
   "host_permissions": [
     "*://*.ajou.ac.kr/*",
-    "*://*/*"
+    "*://.ajou.ac.kr/*",
+    "*://*.ajous.ga/*"
   ],
   "permissions": [
     "cookies",
     "webRequest",
+    "storage",
     "tabs"
   ],
   "background": {
     "service_worker": "background.js"
   },
+  "options_page": "options.html",
   "icons": {
     "16": "assets/image/b1-1 5-ai-border-16.png",
     "48": "assets/image/b1-1 5-ai-border-48.png",

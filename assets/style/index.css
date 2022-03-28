@@ -3,6 +3,13 @@ html, body {
     padding: 0;
 }
 
+html {
+    background-image: url('/assets/image/b1-1 5-ai-only-grey.png');
+    background-repeat: no-repeat;
+    background-position: bottom right 32px;
+    background-size: 280px;
+}
+
 header {
     background: #164ea7;
     padding: 16px;
@@ -24,10 +31,22 @@ header .title {
     filter: drop-shadow(0 2px 3px #000);
 }
 
+.subtitle {
+    margin-top: 32px;
+    margin-left: 16px;
+}
+
 .container {
     display: flex;
 }
 
+.portlet-col {
+}
+
 .portlet-parent {
     margin: 24px;
+}
+
+.portlet-hide {
+    display: none;
 }

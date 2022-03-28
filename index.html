@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="assets/image/b1-1%205-ai-border.png"/>
     <title>Ajous!</title>
     <link rel="stylesheet" href="assets/style/index.css">
     <script src="assets/script/index.js"></script>
@@ -12,9 +11,10 @@
     <img class="logo" src="assets/image/b1-1%205-ai-white.png" alt="logo">
     <span class="title">Ajous!</span>
 </header>
+<div style="position: fixed;bottom: 0;right: 0;"></div>
 <div class="container">
     <div class="portlet-col">
-        <div class="portlet-parent">
+        <div class="portlet-parent portlet-hide" id="portlet-ASSIGNMENTS">
             <h2>Assignments</h2>
             <div class="portlet-child">
                 <div id="assignments-content">
@@ -30,7 +30,7 @@
         </div>
     </div>
     <div class="portlet-col">
-        <div class="portlet-parent">
+        <div class="portlet-parent portlet-hide" id="portlet-MEALS">
             <h2>Meals</h2>
             <div class="portlet-child">
                 <div id="meals-content">
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-        <div class="portlet-parent">
+        <div class="portlet-parent portlet-hide" id="portlet-LIBRARY">
             <h2>Library</h2>
             <div class="portlet-child">
                 <div id="library-content">

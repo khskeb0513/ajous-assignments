@@ -1,10 +1,15 @@
 {
-    chrome.runtime.sendMessage({type: 'ASSIGNMENTS'});
-    chrome.runtime.sendMessage({type: 'MEALS'});
-    chrome.runtime.sendMessage({type: 'LIBRARY'});
+    chrome.runtime.sendMessage({type: 'GET_PORTLET_LIST'});
 
     chrome.runtime.onMessage.addListener(message => {
         switch (message.type) {
+            case 'GET_PORTLET_LIST': {
+                message.message.portletList.forEach(name => {
+                    document.getElementById(`portlet-${name}`).style.display = 'block'
+                    chrome.runtime.sendMessage({type: name});
+                })
+                break;
+            }
             case 'ASSIGNMENTS': {
                 document.getElementById('assignments-content').innerHTML = message.message
                 break;
@@ -26,5 +31,6 @@
                 break;
             }
         }
+        return true;
     })
 }
