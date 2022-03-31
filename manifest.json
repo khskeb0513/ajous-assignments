@@ -1,9 +1,9 @@
 {
-  "name": "Ajous Sync",
+  "name": "Ajous!",
   "action": {},
   "manifest_version": 3,
-  "version": "0.1",
-  "description": "Client for Ajous. (Ajou univ.)",
+  "version": "0.2",
+  "description": "학교 안에 산재한 정보들을 이모저모 모아서 보여줘요. (for Ajou univ.)",
   "host_permissions": [
     "*://*.ajou.ac.kr/*",
     "*://.ajou.ac.kr/*",
@@ -12,16 +12,14 @@
   "permissions": [
     "cookies",
     "webRequest",
-    "storage",
-    "tabs"
+    "storage"
   ],
   "background": {
     "service_worker": "background.js"
   },
   "options_page": "options.html",
   "icons": {
-    "16": "assets/image/b1-1 5-ai-border-16.png",
-    "48": "assets/image/b1-1 5-ai-border-48.png",
-    "128": "assets/image/b1-1 5-ai-border-128.png"
+    "48": "assets/image/logo-48.png",
+    "128": "assets/image/logo-128.png"
   }
 }

@@ -4,10 +4,8 @@
     chrome.runtime.onMessage.addListener(message => {
         switch (message.type) {
             case 'GET_PORTLET_LIST': {
-                message.message.portletList.forEach(name => {
-                    document.querySelectorAll(`input[name=portlet-list]`).forEach(value => {
-                        value.checked = message.message.portletList.includes(value.value)
-                    })
+                message.message.forEach(name => {
+                    document.querySelector(`input[value=${name}]`).checked = true
                 })
             }
         }

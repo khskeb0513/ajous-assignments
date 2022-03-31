@@ -3,13 +3,6 @@ html, body {
     padding: 0;
 }
 
-html {
-    background-image: url('/assets/image/b1-1 5-ai-only-grey.png');
-    background-repeat: no-repeat;
-    background-position: bottom right 32px;
-    background-size: 280px;
-}
-
 header {
     background: #164ea7;
     padding: 16px;
@@ -40,7 +33,30 @@ header .title {
     display: flex;
 }
 
-.portlet-col {
+footer {
+    padding: 32px 0 32px 64px;
+    background-color: #ededed;
+    display: flex;
+    align-items: center;
+}
+
+footer * {
+    text-decoration: none;
+    color: dimgrey;
+    margin-right: 36px;
+}
+
+footer *:hover {
+    color: #164ea7;
+}
+
+.portlet-col:not(:first-child) {
+    padding-left: 24px;
+}
+
+.portlet-col:not(:last-child) {
+    padding-right: 24px;
+    border-right: lightgray 1px solid;
 }
 
 .portlet-parent {
@@ -49,4 +65,17 @@ header .title {
 
 .portlet-hide {
     display: none;
+}
+
+.help-link {
+    margin-left: 0.6em;
+    cursor: help;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+#portlet-USE_LIBRARY * {
+    width: 296px;
+    list-style: none;
+    padding: 0;
 }

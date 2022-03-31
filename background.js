@@ -1,9 +1,9 @@
 const PortletEnum = {
     assignments: 'ASSIGNMENTS',
     meals: 'MEALS',
-    library: 'LIBRARY'
+    library: 'LIBRARY',
+    useLibrary: 'USE_LIBRARY'
 }
-
 
 chrome.runtime.onInstalled.addListener(details => {
     chrome.storage.sync.set({portletList: Object.values(PortletEnum)})
@@ -18,7 +18,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     switch (message.type) {
         case 'GET_PORTLET_LIST': {
             return chrome.storage.sync.get('portletList').then(r =>
-                chrome.tabs.sendMessage(sender.tab.id, {...message, message: r})
+                chrome.tabs.sendMessage(sender.tab.id, {...message, message: r.portletList})
             )
         }
         case 'SAVE_PORTLET_LIST': {
@@ -113,6 +113,11 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
                 })
                 return true;
             })()
+            return true;
+        }
+        case 'USE_LIBRARY': {
+            fetch('https://library.ajou.ac.kr/pyxis-api/1/static-pages/MYLIBRARY-CHARGES')
+                .then(r => r.json()).then(r => chrome.tabs.sendMessage(sender.tab.id, {...message, message: r.data}));
             return true;
         }
     }

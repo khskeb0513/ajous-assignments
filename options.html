@@ -9,21 +9,30 @@
             list-style: none;
         }
 
-        a {
+        .container a {
             text-decoration: underline black;
             color: black;
+        }
+
+        footer {
+            bottom: 0;
+            position: fixed;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 <header>
-    <img class="logo" src="assets/image/b1-1%205-ai-white.png" alt="logo">
+    <img class="logo" src="assets/image/logo-white.png" alt="logo">
     <span class="title">Ajous!</span>
 </header>
-<div class="subtitle">
-    <h2>Settings</h2>
-</div>
+<div class="subtitle"></div>
 <div class="container">
+    <div class="portlet-col">
+        <div class="portlet-parent">
+            <h1>Settings</h1>
+        </div>
+    </div>
     <div class="portlet-col">
         <div class="portlet-parent">
             <h3>포틀릿 설정</h3>
@@ -48,7 +57,14 @@
                                 Library
                             </label>
                         </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="portlet-list" value="USE_LIBRARY">
+                                Library Charge Rules
+                            </label>
+                        </li>
                     </ul>
+                    <br>
                     <button id="save-portlet-list">Save</button>
                 </form>
             </div>
@@ -63,6 +79,13 @@
         </div>
     </div>
 </div>
+<footer>
+    <img src="assets/image/logo-only-48.png" alt="logo" width="24"/>
+    <a target="_blank" href="options.html">Options</a>
+    <a target="_blank" href="https://status.ajous.ga">Server Status</a>
+    <a target="_blank" href="https://ajous.notion.site">Notion Site</a>
+    <a target="_blank" href="https://ajous.page.link/notion-contact">&lt;Code&gt;</a>
+</footer>
 <script src="assets/script/options.js"></script>
 </body>
 </html>
