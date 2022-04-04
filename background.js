@@ -16,6 +16,9 @@ chrome.action.onClicked.addListener(tab => {
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     switch (message.type) {
+        case 'REFRESH_PAGE': {
+            return chrome.runtime.sendMessage({type: 'REFRESH_PAGE'});
+        }
         case 'GET_PORTLET_LIST': {
             return chrome.storage.sync.get('portletList').then(r =>
                 chrome.tabs.sendMessage(sender.tab.id, {...message, message: r.portletList})
@@ -79,7 +82,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         case 'LIBRARY': {
             (async () => {
                 const getCookie = async () => chrome.cookies.get({
-                    url: 'https://.ajou.ac.kr', name: 'AJOUPYXIS2'
+                    url: 'https://library.ajou.ac.kr', name: 'AJOUPYXIS2'
                 });
                 const render = async () => {
                     const cookie = await getCookie()
@@ -99,7 +102,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
                         render().then(r => chrome.tabs.sendMessage(sender.tab.id, {...message, message: r}));
                         chrome.windows.remove(window.id);
                     }, {
-                        urls: ['https://library.ajou.ac.kr/pyxis-api/1/static-pages/MYLIBRARY-CHARGES']
+                        urls: ['https://library.ajou.ac.kr/pyxis-api/1/api/charges*']
                     });
                 })
                 const cookie = await getCookie();
