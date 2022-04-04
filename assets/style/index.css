@@ -31,7 +31,7 @@ header .title {
     filter: drop-shadow(0 2px 3px #000);
 }
 
-.subtitle {
+.subtitle-box {
     margin-top: 32px;
     margin-left: 16px;
 }
@@ -71,6 +71,11 @@ footer *:hover {
 
 .portlet-hide {
     display: none;
+}
+
+.silent-link {
+    text-decoration: none;
+    color: black;
 }
 
 .help-link {

@@ -17,5 +17,7 @@
             if (!!value.checked) list.push(value.value)
         })
         chrome.runtime.sendMessage({type: 'SAVE_PORTLET_LIST', message: list});
+        chrome.runtime.sendMessage({type: 'REFRESH_PAGE'});
+        window.alert('Changes applied.')
     })
 }

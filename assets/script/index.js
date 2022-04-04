@@ -12,6 +12,10 @@
             })
 
         switch (message.type) {
+            case 'REFRESH_PAGE': {
+                document.location.reload();
+                return window.scrollTo(0, 0);
+            }
             case 'GET_PORTLET_LIST': {
                 message.message.forEach(name => {
                     const portletElement = document.getElementById(`portlet-${name}`)
