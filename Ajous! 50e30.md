@@ -1,10 +1,6 @@
-<p align="center">
-<img src="docs/b1-1_5-ai-border-128.png" alt="logo" width="96">
-</p>
+# Ajous!
 
-# Ajous! 확장프로그램
-
-<img src="https://img.shields.io/badge/Chrome%20Extension-v.20220408-success?logo=googlechrome&logoColor=white" alt="chrome-download">
+## 안녕하세요. Ajous! 를 설치해줘서 감사해요.
 
 ### Ajous! 는
 
@@ -36,7 +32,6 @@ Ajous! 를 계속 사용하는 경우 아래 방식과 같이 확장 프로그�
         2. 서버는 쿠키값이 비정상이면 null을 리턴한다.
             1. 확장 프로그램은 로그인창을 불러온다.
             2. 로그인 완료 시 팝업창을 닫고 다시 쿠키를 수집, 서버에 전송한다.
-               1. 특정 URL로의 요청이 발생한 경우 로그인이 완료되었다고 간주한다.
             3. 다시 3번으로 수행한다.
     4. 확장 프로그램은 서버로부터 받은 마크업 코드를 페이지에 삽입한다.
 
@@ -47,10 +42,10 @@ Ajous! 는 여러분의 생각이 필요해요. 개선점이나 문제점이 있
 - Github: [https://github.com/khskeb0513/ajous-assignments](https://github.com/khskeb0513/ajous-assignments)
 - Email: [Hyeonseung Kang <h5k@ajou.ac.kr>](mailto:h5k@ajou.ac.kr)
 
-### 연관문서
+### 하위문서
 
-[Notion Site](https://ajous.notion.site/)
+[Contact Channel](https://www.notion.so/Contact-Channel-6e820beb59e74beaafd43515eeccc1ef)
 
-[Server Status](https://status.ajous.ga)
+[Privacy Policy](https://www.notion.so/Privacy-Policy-4abf0006145a413dab9cbd881d3e7092)
 
-[Code](https://github.com/khskeb0513/ajous-assignments)
+[Terms & Condition](https://www.notion.so/Terms-Condition-591b300ada2c435fa570ae3c34735c78)

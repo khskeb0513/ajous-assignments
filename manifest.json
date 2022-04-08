@@ -2,7 +2,7 @@
   "name": "Ajous!",
   "action": {},
   "manifest_version": 3,
-  "version": "0.5",
+  "version": "20220408",
   "description": "학교 안에 산재한 정보들을 이모저모 모아서 보여줘요. (for Ajou univ.)",
   "host_permissions": [
     "*://*.ajou.ac.kr/*",
