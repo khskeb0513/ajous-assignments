@@ -3,7 +3,7 @@
 </p>
 
 # Ajous! 확장프로그램
-> ### 여기서 다운로드 하세요.
+> 여기서 다운로드 하세요.
 > 
 > <a href="https://chrome.google.com/webstore/detail/ajous/liladcidbbkjjepphflacbinfgihhlde?hl=ko">
 > <img src="https://img.shields.io/badge/Chrome%20Extension-v.20220408-success?logo=googlechrome&logoColor=white" alt="chrome-download">
